@@ -1,0 +1,9 @@
+#! /usr/bin/env expect --
+
+#
+## Why: Force a program to think STDOUT is open.
+#
+
+eval spawn -noecho $argv
+set timeout -1
+expect
